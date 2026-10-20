@@ -1,0 +1,395 @@
+{
+  "Version": 1,
+  "Configs": [
+    {
+      "Id": "fortnite",
+      "Name": "Fortnite",
+      "Genre": "battleroyale",
+      "Tint": "B.Purple",
+      "Tagline": "Modo rendimiento, mínimo input lag y FPS estables en construcciones.",
+      "Exes": [
+        "FortniteClient-Win64-Shipping"
+      ],
+      "Competitive": true,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Easy Anti-Cheat: Rayo no toca el juego en ejecución.",
+      "InGame": [
+        "Rayo aplica solo: modo rendimiento, sin VSync ni desenfoque, calidad baja donde no da ventaja (respeta tu límite de FPS).",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Límite de FPS: el de tu monitor o «Sin límite» si tu PC lo mantiene estable.",
+        "Distancia de visión: Media o Lejana para ver construcciones a lo lejos.",
+        "Mallas en modo rendimiento: Alta si tienes más de 6 GB de VRAM."
+      ]
+    },
+    {
+      "Id": "valorant",
+      "Name": "Valorant",
+      "Genre": "shooter",
+      "Tint": "B.Red",
+      "Tagline": "Muy dependiente de la CPU: prioriza latencia y FPS mínimos.",
+      "Exes": [
+        "VALORANT-Win64-Shipping"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "Vanguard: Rayo no toca el juego ni su anticheat.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa.",
+        "Límite de FPS: desactivado, o el doble de tus Hz si notas tirones.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Calidad de material, textura y detalle: Baja.",
+        "Viñeta, Bloom, Distorsión y Sombras proyectadas: Desactivados.",
+        "Antialiasing: MSAA 2x · Filtrado anisotrópico: 4x · VSync: Desactivado."
+      ]
+    },
+    {
+      "Id": "cs2",
+      "Name": "Counter-Strike 2",
+      "Genre": "shooter",
+      "Tint": "B.Amber",
+      "Tagline": "Frametime consistente y menor latencia del sistema.",
+      "Exes": [
+        "cs2"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "VAC / FACEIT: Rayo no toca el juego ni modifica archivos de Steam.",
+      "InGame": [
+        "Modo de visualización: Pantalla completa.",
+        "Mejorar contraste de jugadores: Activado.",
+        "Esperar la sincronización vertical: Desactivado.",
+        "NVIDIA Reflex Low Latency: Activado + Boost.",
+        "Antialiasing: MSAA 4x (o 2x en PC modestos).",
+        "Sombras, detalle de modelos y texturas: Bajo · Sombreadores: Bajo.",
+        "FidelityFX Super Resolution: Desactivado (calidad máxima)."
+      ]
+    },
+    {
+      "Id": "warzone",
+      "Name": "Call of Duty / Warzone",
+      "Genre": "battleroyale",
+      "Tint": "B.Green",
+      "Tagline": "Menos tirones de streaming y latencia más baja.",
+      "Exes": [
+        "cod",
+        "cod24",
+        "ModernWarfare",
+        "BlackOps6"
+      ],
+      "Competitive": true,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Ricochet: Rayo no toca el juego ni su anticheat.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa exclusiva.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Transmisión de texturas bajo demanda: Desactivado.",
+        "Calidad de sombras, partículas y oclusión ambiental: Baja / Desactivado.",
+        "Escalado: DLSS Calidad si quieres más FPS; Desenfoque de movimiento: Desactivado.",
+        "VSync (juego y menú): Desactivado."
+      ]
+    },
+    {
+      "Id": "apex",
+      "Name": "Apex Legends",
+      "Genre": "battleroyale",
+      "Tint": "B.Red",
+      "Tagline": "FPS altos y estables en peleas con muchos efectos.",
+      "Exes": [
+        "r5apex",
+        "r5apex_dx12"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "Easy Anti-Cheat: Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "Objetivo de FPS de resolución adaptativa: 0 (desactivado).",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Presupuesto de streaming de texturas: según tu VRAM (no lo pases).",
+        "Oclusión ambiental, sombras puntuales e iluminación volumétrica: Desactivadas.",
+        "Detalle de modelos y efectos: Bajo · Muñecos de trapo: Bajo."
+      ]
+    },
+    {
+      "Id": "r6",
+      "Name": "Rainbow Six Siege",
+      "Genre": "shooter",
+      "Tint": "B.Blue",
+      "Tagline": "Latencia mínima y visibilidad clara.",
+      "Exes": [
+        "RainbowSix",
+        "RainbowSix_Vulkan",
+        "RainbowSix_BE"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "BattlEye: Rayo no toca el juego ni su anticheat.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Escala de renderizado: 100.",
+        "Sombras y reflejos: Bajo · Oclusión ambiental: Desactivado.",
+        "Efectos de lente y profundidad de campo al apuntar: Desactivados."
+      ]
+    },
+    {
+      "Id": "ow2",
+      "Name": "Overwatch 2",
+      "Genre": "shooter",
+      "Tint": "B.Amber",
+      "Tagline": "FPS estables en peleas de equipo.",
+      "Exes": [
+        "Overwatch"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync y triple búfer: Desactivados.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Límite de FPS: Personalizado, un poco por encima de tus Hz.",
+        "Escala de renderizado: 100 %.",
+        "Sombras, iluminación local y oclusión ambiental: Baja / Desactivada."
+      ]
+    },
+    {
+      "Id": "rivals",
+      "Name": "Marvel Rivals",
+      "Genre": "shooter",
+      "Tint": "B.Red",
+      "Tagline": "Juego pesado: más FPS sin perder legibilidad.",
+      "Exes": [
+        "Marvel-Win64-Shipping"
+      ],
+      "Competitive": true,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Escalado: DLSS Calidad (NVIDIA) o FSR Calidad · Generación de fotogramas: Desactivada (añade latencia).",
+        "Iluminación global, sombras y reflejos: Baja.",
+        "Desenfoque de movimiento: Desactivado."
+      ]
+    },
+    {
+      "Id": "pubg",
+      "Name": "PUBG: Battlegrounds",
+      "Genre": "battleroyale",
+      "Tint": "B.Amber",
+      "Tagline": "Ver enemigos a lo lejos con FPS estables.",
+      "Exes": [
+        "TslGame"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "BattlEye: Rayo no toca el juego ni su anticheat.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync y desenfoque de movimiento: Desactivados.",
+        "NVIDIA Reflex: Activado.",
+        "Escala de renderizado: 100 · Antialiasing: Ultra (bordes más limpios a distancia).",
+        "Postprocesado, sombras, efectos y follaje: Muy bajo.",
+        "Texturas: Medio · Distancia de visión: Medio o Bajo."
+      ]
+    },
+    {
+      "Id": "freefire",
+      "Name": "Free Fire (emulador)",
+      "Genre": "battleroyale",
+      "Tint": "B.Amber",
+      "Tagline": "Para BlueStacks o MSI App Player: más FPS y menos lag del emulador.",
+      "Exes": [
+        "HD-Player",
+        "MSI App Player"
+      ],
+      "Competitive": true,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Rayo optimiza el emulador, no el juego.",
+      "InGame": [
+        "En el emulador: Modo de rendimiento Alto · CPU 4 núcleos · RAM 4 GB.",
+        "Activa «Alta tasa de fotogramas» y pon 120 FPS (o los Hz de tu monitor).",
+        "Motor gráfico: Rendimiento (DirectX) · Renderizador ASTC: Por hardware si existe.",
+        "Activa la virtualización (VT-x / SVM) en la BIOS si el emulador lo pide.",
+        "En Free Fire: Gráficos Suave · FPS Alto."
+      ]
+    },
+    {
+      "Id": "lol",
+      "Name": "League of Legends",
+      "Genre": "moba",
+      "Tint": "B.Blue",
+      "Tagline": "FPS estables en peleas de equipo y respuesta inmediata al clic.",
+      "Exes": [
+        "League of Legends"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "Vanguard: Rayo no toca el juego ni su anticheat.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa.",
+        "Límite de FPS: el más alto que mantengas estable · Esperar sincronización vertical: Desactivado.",
+        "Sombras: Desactivadas · Efectos: Media.",
+        "Antialiasing: Desactivado si buscas máximos FPS."
+      ]
+    },
+    {
+      "Id": "dota2",
+      "Name": "Dota 2",
+      "Genre": "moba",
+      "Tint": "B.Red",
+      "Tagline": "Menos tirones en peleas grandes.",
+      "Exes": [
+        "dota2"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "VAC: Rayo no toca el juego.",
+      "InGame": [
+        "API: DirectX 11 (prueba Vulkan si tu GPU es AMD).",
+        "Modo de pantalla: Pantalla completa exclusiva · VSync: Desactivado.",
+        "FPS máximos: 240 o el valor de tus Hz si es mayor.",
+        "Calidad de renderizado: 100 % · Sombras y oclusión ambiental: Bajo / Desactivado."
+      ]
+    },
+    {
+      "Id": "minecraft",
+      "Name": "Minecraft",
+      "Genre": "popular",
+      "Tint": "B.Green",
+      "Tagline": "Menos tirones al cargar chunks y más FPS.",
+      "Exes": [
+        "Minecraft.Windows",
+        "MinecraftLauncher"
+      ],
+      "Competitive": false,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Sin anticheat: si juegas en servidores, revisa sus reglas sobre mods.",
+      "InGame": [
+        "Java: en el launcher, asígnale 4–6 GB de RAM (más no ayuda).",
+        "Distancia de renderizado: 8–12 chunks · Gráficos: Rápidos.",
+        "VSync: Desactivado · FPS máximos: Ilimitado o tus Hz.",
+        "Nubes: Desactivadas · Partículas: Mínimas.",
+        "Opcional en Java: Sodium (con Fabric) multiplica los FPS sin cambiar el juego."
+      ]
+    },
+    {
+      "Id": "roblox",
+      "Name": "Roblox",
+      "Genre": "popular",
+      "Tint": "B.Blue",
+      "Tagline": "Más FPS en experiencias pesadas.",
+      "Exes": [
+        "RobloxPlayerBeta"
+      ],
+      "Competitive": false,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Hyperion: Rayo no toca el juego.",
+      "InGame": [
+        "Calidad gráfica: Manual, entre 3 y 6 barras según la experiencia.",
+        "Velocidad de fotogramas máxima: la de tu monitor (en Ajustes).",
+        "Pantalla completa: Activada (F11)."
+      ]
+    },
+    {
+      "Id": "gta5",
+      "Name": "GTA V",
+      "Genre": "popular",
+      "Tint": "B.Green",
+      "Tagline": "Ciudad fluida sin tirones al conducir rápido.",
+      "Exes": [
+        "GTA5",
+        "GTA5_Enhanced",
+        "PlayGTAV"
+      ],
+      "Competitive": false,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "BattlEye en GTA Online: Rayo no toca el juego.",
+      "InGame": [
+        "Versión DirectX: 11 (Legacy) · VSync: Desactivado.",
+        "Calidad de hierba: Normal (es lo que más FPS consume).",
+        "Sombras: Alta con «Sombras suaves» desactivadas · Postprocesado: Normal.",
+        "MSAA: Desactivado; usa FXAA.",
+        "Densidad y variedad de población: al 50–70 %."
+      ]
+    },
+    {
+      "Id": "eafc",
+      "Name": "EA Sports FC",
+      "Genre": "popular",
+      "Tint": "B.Green",
+      "Tagline": "Partidos fluidos y menos retraso en los controles.",
+      "Exes": [
+        "FC25",
+        "FC26",
+        "FC24"
+      ],
+      "Competitive": false,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "EA Javelin: Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "Límite de FPS: el de tu monitor.",
+        "Calidad de renderizado: Media · Calidad del público y del césped: Baja si notas tirones.",
+        "Usa el mando conectado por cable para menos retraso."
+      ]
+    },
+    {
+      "Id": "rocketleague",
+      "Name": "Rocket League",
+      "Genre": "popular",
+      "Tint": "B.Blue",
+      "Tagline": "Máximos FPS y mínima latencia para aéreos precisos.",
+      "Exes": [
+        "RocketLeague"
+      ],
+      "Competitive": true,
+      "NoFso": true,
+      "CpuHigh": true,
+      "AntiCheat": "Easy Anti-Cheat: Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "FPS máximos: Sin límite o el doble de tus Hz.",
+        "Calidad de renderizado: Alto rendimiento · Detalle: Rendimiento.",
+        "Desenfoque de movimiento, Bloom, Destellos de lente y Clima: Desactivados.",
+        "Sombras dinámicas: Desactivadas."
+      ]
+    },
+    {
+      "Id": "the-finals",
+      "Name": "The Finals",
+      "Genre": "shooter",
+      "Tint": "B.Amber",
+      "Tagline": "Destrucción masiva sin bajones de FPS en las peleas.",
+      "Exes": [
+        "Discovery"
+      ],
+      "Competitive": true,
+      "NoFso": false,
+      "CpuHigh": true,
+      "AntiCheat": "Easy Anti-Cheat: Rayo no toca el juego.",
+      "InGame": [
+        "Modo de pantalla: Pantalla completa · VSync: Desactivado.",
+        "NVIDIA Reflex: Activado + Boost.",
+        "Escalado: DLSS Calidad (NVIDIA) o FSR Calidad · Generación de fotogramas: Desactivada.",
+        "Iluminación global: Estática · Sombras y efectos: Bajo.",
+        "Desenfoque de movimiento y Viñeta: Desactivados."
+      ]
+    }
+  ]
+}
