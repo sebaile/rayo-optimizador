@@ -1,6 +1,6 @@
 # Catálogo de optimizaciones de Rayo
 
-Generado automáticamente desde el código (`Rayo.exe --catalog`). 73 optimizaciones de sistema y 34 apps de debloat.
+Generado automáticamente desde el código (`Rayo.exe --catalog`). 80 optimizaciones de sistema y 34 apps de debloat.
 
 Leyenda: ⭐ incluida en el perfil Recomendado · 🎯 incluida en el perfil Competitivo · 🔁 requiere reinicio · 🚪 requiere cerrar sesión · ⚡ mayor consumo · 🛡️ reduce seguridad.
 
@@ -145,6 +145,15 @@ Evita que Windows Update reemplace el driver de NVIDIA por uno genérico o más 
 
 - `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate = 1 [DWORD]`
 
+### Desactivar Multiplane Overlay (MPO) 🔁
+`gpu.mpo` · Riesgo: **Avanzado** · Reversible
+
+Soluciona parpadeos, pantallazos negros al cambiar de ventana y tirones con varios monitores o con monitores de distinta frecuencia, sobre todo en NVIDIA.
+
+> ⚠️ Úsalo solo si tienes esos problemas: en PCs sin fallos no mejora los FPS y en algunos puede subir un poco la latencia del escritorio.
+
+- `HKLM\SOFTWARE\Microsoft\Windows\Dwm\OverlayTestMode = 5 [DWORD]`
+
 ## CPU y Energía
 
 ### Plan de energía Máximo rendimiento ⭐ ⚡
@@ -276,6 +285,23 @@ Quita el desenfoque translúcido de la barra de tareas, el menú Inicio y las ve
 
 - `HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize\EnableTransparency = 0 [DWORD]`
 
+### Desactivar detección automática de carpetas ⭐ 🚪
+`reg.folderdiscovery` · Riesgo: **Seguro** · Reversible
+
+El Explorador deja de revisar el contenido de cada carpeta para adivinar si es de fotos, música o documentos. Las carpetas grandes (como las de tus juegos) se abren al instante.
+
+- `HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\FolderType = "NotSpecified" [REG_SZ]`
+
+### Efectos visuales: mejor rendimiento 🎯 🚪
+`reg.visualfx` · Riesgo: **Seguro** · Reversible
+
+Como «Ajustar para obtener el mejor rendimiento» de Windows, pero conservando las fuentes suavizadas y las miniaturas: sin arrastre de ventanas con contenido, sombras ni selección translúcida.
+
+- `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\VisualFXSetting = 3 [DWORD]`
+- `HKCU\Control Panel\Desktop\DragFullWindows = "0" [REG_SZ]`
+- `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ListviewAlphaSelect = 0 [DWORD]`
+- `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ListviewShadow = 0 [DWORD]`
+
 ## Red y Ping
 
 ### Desactivar limitación de red multimedia ⭐
@@ -321,6 +347,15 @@ El adaptador avisa a la CPU por cada paquete en lugar de agruparlos: la latencia
 Usa los DNS 1.1.1.1 y 1.0.0.1, que suelen responder antes que los del proveedor. Acelera la conexión a servidores y webs; no cambia el ping dentro de la partida.
 
 - `DNS IPv4 de los adaptadores activos → 1.1.1.1, 1.0.0.1 (se guardan los DNS actuales)`
+
+### Desactivar Teredo y preferir IPv4 🔁
+`net.teredo` · Riesgo: **Avanzado** · Reversible
+
+Apaga los túneles IPv6 (Teredo, 6to4 e ISATAP) y hace que Windows prefiera IPv4. Algunas redes resuelven antes por IPv4 y los túneles agregan latencia.
+
+> ⚠️ Algunos juegos de Xbox / Game Pass (Halo, Forza, Sea of Thieves) usan Teredo para el chat de grupo y el multijugador: si dejan de conectar, revierte este ajuste.
+
+- `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\DisabledComponents = 33 (0x21) [DWORD]`
 
 ## Mouse y Teclado
 
@@ -398,6 +433,16 @@ Deja de crear nombres estilo MS-DOS (PROGRA~1) para cada archivo nuevo, lo que a
 
 - `HKLM\SYSTEM\CurrentControlSet\Control\FileSystem\NtfsDisable8dot3NameCreation = 1 [DWORD]`
 
+### Desactivar apps de la Store en segundo plano 🎯
+`reg.bgapps` · Riesgo: **Moderado** · Reversible
+
+Las apps de Microsoft Store (Tiempo, Noticias, Vincular teléfono…) dejan de ejecutarse cuando no las tienes abiertas: menos RAM, CPU y red mientras juegas.
+
+> ⚠️ Esas apps no actualizan sus avisos en segundo plano (por ejemplo, notificaciones de Vincular teléfono o del Correo de la Store).
+
+- `HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\GlobalUserDisabled = 1 [DWORD]`
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy\LetAppsRunInBackground = 2 [DWORD]`
+
 ## Calidad de vida
 
 ### Mostrar extensiones de archivo ⭐
@@ -436,6 +481,14 @@ Muestra qué está haciendo Windows al arrancar y apagar. No lo acelera, pero ay
 - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\VerboseStatus = 1 [DWORD]`
 
 ## Privacidad
+
+### Bloquear apps de fabricantes al conectar dispositivos 
+`priv.devicesoftware` · Riesgo: **Seguro** · Reversible
+
+Al conectar un mouse, teclado o auriculares, Windows deja de descargar sola la app del fabricante (Razer, Logitech, etc.) y su publicidad. Los drivers siguen instalándose normalmente.
+
+- `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata\PreventDeviceMetadataFromNetwork = 1 [DWORD]`
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\Device Metadata\PreventDeviceMetadataFromNetwork = 1 [DWORD]`
 
 ### Reducir telemetría de Windows ⭐
 `priv.telemetry` · Riesgo: **Seguro** · Reversible
@@ -585,6 +638,18 @@ Windows deja de recopilar lo que escribes y dices para «mejorar» el reconocimi
 - `HKCU\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy\HasAccepted = 0 [DWORD]`
 
 ## Servicios
+
+### Windows Update: modo Seguridad 
+`svc.updates` · Riesgo: **Moderado** · Reversible
+
+Los parches de seguridad llegan con 4 días de retraso (los defectuosos se retiran antes de tocar tu PC) y las actualizaciones de versión grandes, con 365 días. Nada de actualizaciones sorpresa antes de una partida.
+
+> ⚠️ Sigues recibiendo los parches de seguridad. Funciona en Windows Pro, Enterprise y Education: Windows Home ignora estas políticas.
+
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates = 1 [DWORD]`
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays = 365 (0x16D) [DWORD]`
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates = 1 [DWORD]`
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays = 4 [DWORD]`
 
 ### Desactivar servicios innecesarios ⭐
 `svc.misc` · Riesgo: **Seguro** · Reversible
