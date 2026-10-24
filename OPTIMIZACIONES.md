@@ -1,6 +1,6 @@
 # Catálogo de optimizaciones de Rayo
 
-Generado automáticamente desde el código (`Rayo.exe --catalog`). 80 optimizaciones de sistema y 34 apps de debloat.
+Generado automáticamente desde el código (`Rayo.exe --catalog`). 87 optimizaciones de sistema y 34 apps de debloat.
 
 Leyenda: ⭐ incluida en el perfil Recomendado · 🎯 incluida en el perfil Competitivo · 🔁 requiere reinicio · 🚪 requiere cerrar sesión · ⚡ mayor consumo · 🛡️ reduce seguridad.
 
@@ -479,6 +479,67 @@ El Explorador abre directamente tus unidades (C:, D:, E:) en lugar de Inicio / A
 Muestra qué está haciendo Windows al arrancar y apagar. No lo acelera, pero ayuda a descubrir qué lo hace lento.
 
 - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\VerboseStatus = 1 [DWORD]`
+
+## Aceleración en apps
+
+### Discord sin aceleración por hardware 
+`accel.discord` · Riesgo: **Seguro** · Reversible
+
+Desactiva «Aceleración por hardware» en Discord (también PTB y Canary). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+> ⚠️ Cierra Discord por completo (también desde la bandeja) antes de aplicar.
+
+- `Discord: enableHardwareAcceleration = false (settings.json)`
+- `Discord PTB: enableHardwareAcceleration = false (settings.json)`
+- `Discord Canary: enableHardwareAcceleration = false (settings.json)`
+
+### Chrome sin aceleración por hardware 
+`accel.chrome` · Riesgo: **Seguro** · Reversible
+
+Desactiva la aceleración por hardware de Google Chrome (política del navegador; Chrome dirá «Administrado por tu organización»). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+- `HKLM\SOFTWARE\Policies\Google\Chrome\HardwareAccelerationModeEnabled = 0 [DWORD]`
+
+### Edge sin aceleración por hardware 
+`accel.edge` · Riesgo: **Seguro** · Reversible
+
+Desactiva la aceleración por hardware de Microsoft Edge (política del navegador; Edge dirá «Administrado por tu organización»). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+- `HKLM\SOFTWARE\Policies\Microsoft\Edge\HardwareAccelerationModeEnabled = 0 [DWORD]`
+
+### Brave sin aceleración por hardware 
+`accel.brave` · Riesgo: **Seguro** · Reversible
+
+Desactiva la aceleración por hardware del navegador Brave (política del navegador). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+- `HKLM\SOFTWARE\Policies\BraveSoftware\Brave\HardwareAccelerationModeEnabled = 0 [DWORD]`
+
+### Firefox sin aceleración por hardware 
+`accel.firefox` · Riesgo: **Seguro** · Reversible
+
+Desactiva la aceleración por hardware de Firefox (política del navegador). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+- `HKLM\SOFTWARE\Policies\Mozilla\Firefox\HardwareAcceleration = 0 [DWORD]`
+
+### Opera / Opera GX sin aceleración por hardware 
+`accel.opera` · Riesgo: **Seguro** · Reversible
+
+Desactiva «Usar aceleración por hardware» en Opera y Opera GX. Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+> ⚠️ Cierra Opera antes de aplicar.
+
+- `Opera GX: hardware_acceleration_mode.enabled = false (Local State)`
+- `Opera: hardware_acceleration_mode.enabled = false (Local State)`
+
+### Spotify sin aceleración por hardware 
+`accel.spotify` · Riesgo: **Seguro** · Reversible
+
+Desactiva «Aceleración por hardware» en Spotify (versión de escritorio y de Microsoft Store). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
+
+> ⚠️ Cierra Spotify antes de aplicar.
+
+- `Spotify: ui.hardware_acceleration=false (prefs)`
+- `Spotify: ui.hardware_acceleration=false (prefs)`
 
 ## Privacidad
 
