@@ -482,7 +482,7 @@ Muestra qué está haciendo Windows al arrancar y apagar. No lo acelera, pero ay
 
 ## Aceleración en apps
 
-### Discord sin aceleración por hardware 
+### Desactivar aceleración por hardware en Discord 
 `accel.discord` · Riesgo: **Seguro** · Reversible
 
 Desactiva «Aceleración por hardware» en Discord (también PTB y Canary). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
@@ -493,35 +493,35 @@ Desactiva «Aceleración por hardware» en Discord (también PTB y Canary). Libe
 - `Discord PTB: enableHardwareAcceleration = false (settings.json)`
 - `Discord Canary: enableHardwareAcceleration = false (settings.json)`
 
-### Chrome sin aceleración por hardware 
+### Desactivar aceleración por hardware en Chrome 
 `accel.chrome` · Riesgo: **Seguro** · Reversible
 
 Desactiva la aceleración por hardware de Google Chrome (política del navegador; Chrome dirá «Administrado por tu organización»). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
 
 - `HKLM\SOFTWARE\Policies\Google\Chrome\HardwareAccelerationModeEnabled = 0 [DWORD]`
 
-### Edge sin aceleración por hardware 
+### Desactivar aceleración por hardware en Edge 
 `accel.edge` · Riesgo: **Seguro** · Reversible
 
 Desactiva la aceleración por hardware de Microsoft Edge (política del navegador; Edge dirá «Administrado por tu organización»). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
 
 - `HKLM\SOFTWARE\Policies\Microsoft\Edge\HardwareAccelerationModeEnabled = 0 [DWORD]`
 
-### Brave sin aceleración por hardware 
+### Desactivar aceleración por hardware en Brave 
 `accel.brave` · Riesgo: **Seguro** · Reversible
 
 Desactiva la aceleración por hardware del navegador Brave (política del navegador). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
 
 - `HKLM\SOFTWARE\Policies\BraveSoftware\Brave\HardwareAccelerationModeEnabled = 0 [DWORD]`
 
-### Firefox sin aceleración por hardware 
+### Desactivar aceleración por hardware en Firefox 
 `accel.firefox` · Riesgo: **Seguro** · Reversible
 
 Desactiva la aceleración por hardware de Firefox (política del navegador). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
 
 - `HKLM\SOFTWARE\Policies\Mozilla\Firefox\HardwareAcceleration = 0 [DWORD]`
 
-### Opera / Opera GX sin aceleración por hardware 
+### Desactivar aceleración por hardware en Opera / Opera GX 
 `accel.opera` · Riesgo: **Seguro** · Reversible
 
 Desactiva «Usar aceleración por hardware» en Opera y Opera GX. Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
@@ -531,7 +531,7 @@ Desactiva «Usar aceleración por hardware» en Opera y Opera GX. Libera la GPU 
 - `Opera GX: hardware_acceleration_mode.enabled = false (Local State)`
 - `Opera: hardware_acceleration_mode.enabled = false (Local State)`
 
-### Spotify sin aceleración por hardware 
+### Desactivar aceleración por hardware en Spotify 
 `accel.spotify` · Riesgo: **Seguro** · Reversible
 
 Desactiva «Aceleración por hardware» en Spotify (versión de escritorio y de Microsoft Store). Libera la GPU (y su memoria) para el juego mientras la app queda abierta de fondo; la app usa un poco más de CPU. Útil sobre todo con GPU integrada o de gama de entrada.
