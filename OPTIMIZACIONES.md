@@ -1,6 +1,6 @@
 # Catálogo de optimizaciones de Rayo
 
-Generado automáticamente desde el código (`Rayo.exe --catalog`). 87 optimizaciones de sistema y 34 apps de debloat.
+Generado automáticamente desde el código (`Rayo.exe --catalog`). 87 optimizaciones de sistema y 49 apps de debloat.
 
 Leyenda: ⭐ incluida en el perfil Recomendado · 🎯 incluida en el perfil Competitivo · 🔁 requiere reinicio · 🚪 requiere cerrar sesión · ⚡ mayor consumo · 🛡️ reduce seguridad.
 
@@ -982,6 +982,111 @@ Superposición Win+G.
 
 - `Desinstalar la app Microsoft.XboxGamingOverlay (usuario actual y copia aprovisionada)`
 
+### OneNote (Windows 10) 
+`app.microsoft.office.onenote` · Riesgo: **Seguro** · No reversible automáticamente
+
+Versión antigua de OneNote que viene preinstalada.
+
+- `Desinstalar la app Microsoft.Office.OneNote (usuario actual y copia aprovisionada)`
+
+### Microsoft Whiteboard 
+`app.microsoft.whiteboard` · Riesgo: **Seguro** · No reversible automáticamente
+
+Pizarra colaborativa de Microsoft 365.
+
+- `Desinstalar la app Microsoft.Whiteboard (usuario actual y copia aprovisionada)`
+
+### Sway 
+`app.microsoft.office.sway` · Riesgo: **Seguro** · No reversible automáticamente
+
+Presentaciones en línea de Office.
+
+- `Desinstalar la app Microsoft.Office.Sway (usuario actual y copia aprovisionada)`
+
+### Planes móviles 
+`app.microsoft.oneconnect` · Riesgo: **Seguro** · No reversible automáticamente
+
+Contratación de planes de datos móviles.
+
+- `Desinstalar la app Microsoft.OneConnect (usuario actual y copia aprovisionada)`
+
+### Mensajería 
+`app.microsoft.messaging` · Riesgo: **Seguro** · No reversible automáticamente
+
+App de mensajes heredada de Windows 10.
+
+- `Desinstalar la app Microsoft.Messaging (usuario actual y copia aprovisionada)`
+
+### Print 3D 
+`app.microsoft.print3d` · Riesgo: **Seguro** · No reversible automáticamente
+
+Preparación de modelos para impresoras 3D.
+
+- `Desinstalar la app Microsoft.Print3D (usuario actual y copia aprovisionada)`
+
+### 3D Builder 
+`app.microsoft.3dbuilder` · Riesgo: **Seguro** · No reversible automáticamente
+
+Editor de modelos 3D heredado.
+
+- `Desinstalar la app Microsoft.3DBuilder (usuario actual y copia aprovisionada)`
+
+### Microsoft Wallet 
+`app.microsoft.wallet` · Riesgo: **Seguro** · No reversible automáticamente
+
+Cartera de pagos descontinuada.
+
+- `Desinstalar la app Microsoft.Wallet (usuario actual y copia aprovisionada)`
+
+### Test de velocidad de red 
+`app.microsoft.networkspeedtest` · Riesgo: **Seguro** · No reversible automáticamente
+
+Medidor de velocidad heredado.
+
+- `Desinstalar la app Microsoft.NetworkSpeedTest (usuario actual y copia aprovisionada)`
+
+### Finanzas (MSN) 
+`app.microsoft.bingfinance` · Riesgo: **Seguro** · No reversible automáticamente
+
+Cotizaciones y noticias financieras de MSN.
+
+- `Desinstalar la app Microsoft.BingFinance (usuario actual y copia aprovisionada)`
+
+### Deportes (MSN) 
+`app.microsoft.bingsports` · Riesgo: **Seguro** · No reversible automáticamente
+
+Resultados deportivos de MSN.
+
+- `Desinstalar la app Microsoft.BingSports (usuario actual y copia aprovisionada)`
+
+### Traductor (Bing) 
+`app.microsoft.bingtranslator` · Riesgo: **Seguro** · No reversible automáticamente
+
+Traductor de Bing.
+
+- `Desinstalar la app Microsoft.BingTranslator (usuario actual y copia aprovisionada)`
+
+### Xbox Console Companion 
+`app.microsoft.xboxapp` · Riesgo: **Seguro** · No reversible automáticamente
+
+App antigua para conectar con la consola Xbox.
+
+- `Desinstalar la app Microsoft.XboxApp (usuario actual y copia aprovisionada)`
+
+### Microsoft Family 
+`app.microsoftcorporationii.microsoftfamily` · Riesgo: **Seguro** · No reversible automáticamente
+
+Control parental de Microsoft.
+
+- `Desinstalar la app MicrosoftCorporationII.MicrosoftFamily (usuario actual y copia aprovisionada)`
+
+### Microsoft Journal 
+`app.microsoft.microsoftjournal` · Riesgo: **Seguro** · No reversible automáticamente
+
+App de notas a mano alzada.
+
+- `Desinstalar la app Microsoft.MicrosoftJournal (usuario actual y copia aprovisionada)`
+
 ### App de Xbox 
 `app.microsoft.gamingapp` · Riesgo: **Avanzado** · No reversible automáticamente
 
@@ -1013,6 +1118,10 @@ Candy Crush, TikTok, Disney+, Facebook, Instagram, Prime Video y otros accesos q
 - `Desinstalar la app *HiddenCity* (usuario actual y copia aprovisionada)`
 - `Desinstalar la app *FarmVille* (usuario actual y copia aprovisionada)`
 - `Desinstalar la app *RoyalRevolt* (usuario actual y copia aprovisionada)`
+- `Desinstalar la app *Flipboard* (usuario actual y copia aprovisionada)`
+- `Desinstalar la app *Wunderlist* (usuario actual y copia aprovisionada)`
+- `Desinstalar la app *Sketchable* (usuario actual y copia aprovisionada)`
+- `Desinstalar la app *AdobeExpress* (usuario actual y copia aprovisionada)`
 
 ### OneDrive 
 `app.onedrive` · Riesgo: **Avanzado** · No reversible automáticamente
