@@ -175,7 +175,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <div class="logo-row">
         <img src="img/logo.png" alt="Logo de Rayo: un rayo naranja" width="76" height="76">
-        <div><b>RAYO</b><span>Optimizador FPS · v3.0.0</span></div>
+        <div><b>RAYO</b><span>Optimizador FPS · v3.1.0</span></div>
       </div>
       <h1>Más FPS, menos latencia, <span class="grad">Windows sin basura.</span></h1>
       <p class="sub">Optimizador de FPS, latencia y debloat para Windows 10/11, con Configs para Fortnite, Valorant, CS2 y 15 juegos más. En español y todo reversible.</p>
@@ -228,7 +228,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </article>
       <article class="card">
         <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></span>Limpieza</h3>
-        <p>Temporales, cachés de sombreadores DirectX/NVIDIA, descargas de Windows Update, volcados, DNS, memoria en espera y TRIM. Además cierra las apps que gastan RAM antes de jugar (primero de forma normal; forzar solo si tú lo confirmas), sin tocar procesos de Windows, drivers, antivirus ni tus juegos.</p>
+        <p>Temporales, cachés de sombreadores DirectX/NVIDIA, descargas de Windows Update, cachés de launchers, volcados, DNS, memoria en espera y TRIM. Analizador de disco para ver qué ocupa más espacio (juegos, descargas, Windows) y, en Pro, comprimir Windows para discos chicos. Además cierra las apps que gastan RAM antes de jugar (primero de forma normal; forzar solo si tú lo confirmas), sin tocar procesos de Windows, drivers, antivirus ni tus juegos.</p>
       </article>
       <article class="card">
         <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>Respaldo y seguridad</h3>
@@ -236,7 +236,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </article>
       <article class="card">
         <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></span>Herramientas</h3>
-        <p>Reparar Windows (SFC y DISM), reiniciar la red, reparar Windows Update y paneles clásicos. DNS más rápido con prueba de latencia real, kit de apps gamer con winget, «Actualizar todo» y mantenimiento automático cada semana.</p>
+        <p>Reparar Windows (SFC y DISM), reiniciar la red, reparar Windows Update y paneles clásicos. DNS más rápido con prueba de latencia real y mantenimiento automático cada semana.</p>
       </article>
     </div>
 
@@ -310,7 +310,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
           <li>Overlay: FPS, 1 % low, temperaturas y ping</li>
           <li>Modo Juego automático al abrir tus juegos</li>
           <li>Perfiles propios: guardar, exportar e importar</li>
-          <li>Kit de apps gamer, «Actualizar todo» y mantenimiento semanal</li>
+          <li>Mantenimiento automático semanal</li>
           <li>Soporte directo y prioridad en novedades</li>
         </ul>
         <a class="btn primary" href="https://discord.gg/vS4KV8m5su">Comprar Elite</a>
@@ -385,7 +385,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div class="dl">
       <div>
         <span class="kicker">Descargar</span>
-        <h2>Rayo v3.0.0 para Windows</h2>
+        <h2>Rayo v3.1.0 para Windows</h2>
         <div class="cta" style="margin-top:22px">
           <a class="btn primary" href="https://github.com/sebaile/rayo-optimizador/releases/latest/download/RayoSetup.exe">Descargar instalador · 1 MB</a>
           <a class="btn" href="https://github.com/sebaile/rayo-optimizador/releases/latest">Versión portátil (ZIP)</a>
@@ -393,7 +393,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p style="color:var(--muted);font-size:.9rem;margin:12px 0 0">El ZIP trae <code>Rayo.exe</code> (sin instalar), <code>LEEME.txt</code>, <code>TERMINOS.txt</code> y <code>OPTIMIZACIONES.md</code>. Rayo se actualiza solo con un clic.</p>
 
         <ol class="steps">
-          <li><b>Descarga y descomprime</b> el ZIP, o ejecuta el instalador (sin permisos de administrador).</li>
+          <li><b>Descarga y descomprime</b> el ZIP, o ejecuta el instalador (acepta el aviso de permisos de Windows).</li>
           <li><b>Abre Rayo</b> y acepta el permiso de administrador. Si lo rechazas, funciona en modo de solo lectura.</li>
           <li><b>Revisa Inicio y Escáner</b> y pulsa «Optimizar ahora» para aplicar el perfil Recomendado.</li>
           <li><b>Reinicia</b> cuando Rayo te lo indique.</li>
@@ -442,7 +442,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <footer>
   <div class="wrap">
-    <span>⚡ Rayo · Optimizador FPS v3.0.0 · <a href="https://discord.gg/vS4KV8m5su">Discord</a></span>
+    <span>⚡ Rayo · Optimizador FPS v3.1.0 · <a href="https://discord.gg/vS4KV8m5su">Discord</a></span>
     <span><a href="https://github.com/sebaile/rayo-optimizador/blob/main/OPTIMIZACIONES.md">Catálogo de optimizaciones</a> · <a href="terminos.html">Términos de uso</a> · <a href="#descargar">Descargar</a></span>
   </div>
 </footer>
