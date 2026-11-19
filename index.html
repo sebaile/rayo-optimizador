@@ -7,6 +7,8 @@
 <meta name="description" content="Optimizador de FPS, latencia y debloat para Windows 10/11. En español, reversible y con punto de restauración. Descarga gratis.">
 <meta name="theme-color" content="#0A0F1A">
 <link rel="icon" href="favicon.ico">
+<link rel="alternate" hreflang="es" href="index.html">
+<link rel="alternate" hreflang="pt-BR" href="pt.html">
 <style>
 :root{
   --bg:#0A0F1A; --card:#101828; --line:#1B263B; --text:#EEF2F8; --muted:#A3AFC3;
@@ -35,7 +37,8 @@ header.nav{position:sticky;top:0;z-index:20;background:rgba(10,15,26,.85);backdr
 .nav nav{margin-left:auto;display:flex;gap:22px}
 .nav nav a{color:var(--muted);text-decoration:none;font-size:.92rem}
 .nav nav a:hover{color:var(--text)}
-@media(max-width:820px){.nav nav a:not(.cta-s){display:none}}
+@media(max-width:820px){.nav nav a:not(.cta-s):not(.lang){display:none}}
+.nav nav a.lang{border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:.8rem;font-weight:600}
 
 /* botones */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:var(--r);font:600 1rem var(--font);text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--card);cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s}
@@ -163,6 +166,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <a href="#descargar">Requisitos</a>
       <a href="#faq">Preguntas</a>
       <a href="https://discord.gg/vS4KV8m5su">Discord</a>
+      <a class="lang" href="pt.html" hreflang="pt-BR" lang="pt-BR" title="Ver em português">PT</a>
       <a class="btn primary sm cta-s" href="#descargar">Descargar</a>
     </nav>
   </div>
@@ -175,7 +179,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <div class="logo-row">
         <img src="img/logo.png" alt="Logo de Rayo: un rayo naranja" width="76" height="76">
-        <div><b>RAYO</b><span>Optimizador FPS · v3.1.0</span></div>
+        <div><b>RAYO</b><span>Optimizador FPS · v3.2.0</span></div>
       </div>
       <h1>Más FPS, menos latencia, <span class="grad">Windows sin basura.</span></h1>
       <p class="sub">Optimizador de FPS, latencia y debloat para Windows 10/11, con Configs para Fortnite, Valorant, CS2 y 15 juegos más. En español y todo reversible.</p>
@@ -385,7 +389,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div class="dl">
       <div>
         <span class="kicker">Descargar</span>
-        <h2>Rayo v3.1.0 para Windows</h2>
+        <h2>Rayo v3.2.0 para Windows</h2>
         <div class="cta" style="margin-top:22px">
           <a class="btn primary" href="https://github.com/sebaile/rayo-optimizador/releases/latest/download/RayoSetup.exe">Descargar instalador · 1 MB</a>
           <a class="btn" href="https://github.com/sebaile/rayo-optimizador/releases/latest">Versión portátil (ZIP)</a>
@@ -442,8 +446,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <footer>
   <div class="wrap">
-    <span>⚡ Rayo · Optimizador FPS v3.1.0 · <a href="https://discord.gg/vS4KV8m5su">Discord</a></span>
-    <span><a href="https://github.com/sebaile/rayo-optimizador/blob/main/OPTIMIZACIONES.md">Catálogo de optimizaciones</a> · <a href="terminos.html">Términos de uso</a> · <a href="#descargar">Descargar</a></span>
+    <span>⚡ Rayo · Optimizador FPS v3.2.0 · <a href="https://discord.gg/vS4KV8m5su">Discord</a></span>
+    <span><a href="https://github.com/sebaile/rayo-optimizador/blob/main/OPTIMIZACIONES.md">Catálogo de optimizaciones</a> · <a href="terminos.html">Términos de uso</a> · <a href="#descargar">Descargar</a> · <a href="pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></span>
   </div>
 </footer>
 
