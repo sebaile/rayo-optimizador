@@ -1,6 +1,6 @@
 # Catálogo de optimizaciones de Rayo
 
-Generado automáticamente desde el código (`Rayo.exe --catalog`). 87 optimizaciones de sistema y 49 apps de debloat.
+Generado automáticamente desde el código (`Rayo.exe --catalog`). 86 optimizaciones de sistema y 49 apps de debloat.
 
 Leyenda: ⭐ incluida en el perfil Recomendado · 🎯 incluida en el perfil Competitivo · 🔁 requiere reinicio · 🚪 requiere cerrar sesión · ⚡ mayor consumo · 🛡️ reduce seguridad.
 
@@ -63,15 +63,6 @@ Mantiene el temporizador del sistema a ritmo constante en lugar de pausarlo en r
 > ⚠️ Modifica la configuración de arranque (bcdedit). Si BitLocker está activo, Rayo lo suspende durante un reinicio para que no te pida la clave de recuperación.
 
 - `Arranque (bcdedit /set {current}): disabledynamictick = yes`
-
-### Desactivar Integridad de memoria (VBS) 🔁 🛡️
-`fps.hvci` · Riesgo: **Avanzado** · Reversible
-
-Microsoft reconoce que la Integridad de memoria puede costar entre 5 y 10 % de FPS. Desactivarla mejora el rendimiento, pero reduce la protección del kernel contra malware.
-
-> ⚠️ Reduce la seguridad del sistema. Puedes volver a activarla cuando quieras desde aquí o en Seguridad de Windows → Seguridad del dispositivo → Aislamiento del núcleo.
-
-- `HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity\Enabled = 0 [DWORD]`
 
 ## GPU
 
